@@ -2,11 +2,11 @@
 #include <math.h>
 
 int main() {
-    float a, b, c;
+    int a, b, c;
     
     // Nhập các hệ số từ bàn phím
     printf("Nhap he so a: ");
-    scanf("%f", &a);
+    scanf("%d", &a);
     printf("Nhap he so b: ");
     scanf("%f", &b);
     printf("Nhap he so c: ");
