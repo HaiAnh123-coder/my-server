@@ -1,0 +1,27 @@
+# main.archify: the entry point of a model, a folder of diagrams that belong
+# together. The folder that holds this file is the model's root. Diagrams
+# below it may refer to shared elements from *.archify-registry files.
+schema_version: 1
+model:
+  id: hai-anh-code
+  name: Hai anh code
+  description: >
+    What this model covers, in a sentence or two.
+# Optional: a diagram of your own for the model page (an overview).
+diagram_type: architecture
+meta:
+  title: Hai anh code overview
+  output: main.html
+components:
+  - id: users
+    type: external
+    label: Users
+    pos: [40, 160]
+    size: [130, 60]
+  - id: system
+    type: cloud
+    label: The system
+    pos: [250, 160]
+    size: [150, 60]
+connections:
+  - {from: users, to: system, label: use}
